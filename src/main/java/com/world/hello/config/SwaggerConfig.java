@@ -32,7 +32,7 @@ public class SwaggerConfig {
         "Spring Boot REST API for User management",
         "1.0",
         "Terms of service",
-        new Contact("Hello", "https://helloworld.com", "hello@world.com"),
+        new Contact("Garen", "https://garengh4-nodejs.herokuapp.com/", "garengh4@gmail.com"),
         "Apache License Version 2.0",
         "https://www.apache.org/licenses/LICENSE-2.0",
         new ArrayList<>());

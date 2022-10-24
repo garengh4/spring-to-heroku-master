@@ -6,7 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class User {
+public class Account {
 
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
@@ -14,7 +14,7 @@ public class User {
 
   private String name;
 
-  private Double salary;
+  private Double accountBalance;
 
   public Integer getId() {
     return id;
@@ -32,11 +32,11 @@ public class User {
     this.name = name;
   }
 
-  public Double getSalary() {
-    return salary;
+  public Double getAccountBalance() {
+    return accountBalance;
   }
 
-  public void setSalary(Double salary) {
-    this.salary = salary;
+  public void setAccountBalance(Double salary) {
+    this.accountBalance = salary;
   }
 }

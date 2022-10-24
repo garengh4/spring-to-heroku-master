@@ -1,7 +1,7 @@
 package com.world.hello.service;
 
-import com.world.hello.entity.dao.User;
-import com.world.hello.entity.pojo.UserParam;
+import com.world.hello.entity.dao.Account;
+import com.world.hello.entity.pojo.AccountParam;
 import com.world.hello.repository.UserRepository;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,16 +13,16 @@ public class UserService {
   @Autowired
   private UserRepository userRepository;
 
-  public List<User> getUserList() {
+  public List<Account> getUserList() {
     return userRepository.findAll();
   }
 
-  public User addUser(UserParam param) {
+  public Account addUser(AccountParam param) {
 
-    User user = new User();
+    Account user = new Account();
 
     user.setName(param.getName());
-    user.setSalary(param.getSalary());
+    user.setAccountBalance(param.getAccountBalance());
 
     return userRepository.save(user);
   }
